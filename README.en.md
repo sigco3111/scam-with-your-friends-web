@@ -1,0 +1,251 @@
+<div align="center">
+
+# Scam With Your Friends — Web
+
+> Run a scam call center with your friends. Use increasingly ridiculous schemes to trick AI callers out of their life savings. Hit your daily quota, cause chaos around the office, and survive a brutal performance review from your rageaholic boss.
+
+<sub>Original game description · [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)</sub>
+
+Scam With Your Friends Web is an **open-source, unofficial browser remake** inspired by Scam With Your Friends. Play a co-op AI call center game with a 3D office, fictional callers, voice chat and daily quotas. Built with React, Three.js and Cloudflare Workers; run it locally or self-host it.
+
+> **Is "Scam With Your Friends" out yet? Release date & playtest:** the official game is by its original developers and is published on [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/) — check the store page for the current release date, Early Access and playtest status, as dates may change. This repo is a **free, unofficial fan-made browser version** you can [play right now](https://scam.gamefun.world) while you wait. Questions? See the [FAQ](https://github.com/mrzh7/scam-with-your-friends-web/discussions).
+
+**Latest update (2026-10-13):** expanded campaign and co-op features (also in no-account mode); Rainbit slot machine fixes with saved results and new staggered reel animations.
+
+### Online co-op call center party game · job simulator · dark comedy, in your browser
+
+**Answer fictional AI callers, talk with your team over voice, manage your time, hit the daily quota and survive the performance review.**
+
+**English** · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [Feedback](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
+
+<p align="center">
+  <a href="https://scam.gamefun.world"><strong>▶ Play Demo</strong></a>
+  &nbsp;·&nbsp;
+  <a href="#watch-the-trailer"><strong>Trailer</strong></a>
+  &nbsp;·&nbsp;
+  <a href="#how-to-play"><strong>Gameplay</strong></a>
+  &nbsp;·&nbsp;
+  <a href="docs/DEPLOYMENT.md"><strong>Deploy</strong></a>
+  &nbsp;·&nbsp;
+  <a href="docs/QUICKSTART.md"><strong>Docs</strong></a>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
+  <a href="https://scam.gamefun.world"><img alt="Website" src="https://img.shields.io/badge/website-scam.gamefun.world-f3c848?labelColor=142e30" /></a>
+  <img alt="React" src="https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white&labelColor=20232a" />
+  <img alt="Three.js" src="https://img.shields.io/badge/Three.js-r180-000000?logo=threedotjs&logoColor=white" />
+  <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white" />
+  <a href=".github/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" /></a>
+  <a href="https://x.com/mr_zh7"><img alt="X @mr_zh7" src="https://img.shields.io/badge/X-@mr__zh7-000000?logo=x&logoColor=white" /></a>
+</p>
+
+<!-- Ranking badges (uncomment when live — do not leave broken images):
+  Trendshift appears only after the repo is listed at https://trendshift.io
+  (replace REPO_ID with the id shown on https://trendshift.io/repositories/<id>):
+  <a href="https://trendshift.io/repositories/REPO_ID" target="_blank"><img src="https://trendshift.io/api/badge/repositories/REPO_ID" alt="mrzh7/scam-with-your-friends-web | Trendshift" width="250" height="55"/></a>
+  Star History rank badge (works only once the repo is in their ranking):
+  <a href="https://www.star-history.com/mrzh7/scam-with-your-friends-web"><img src="https://api.star-history.com/badge?repo=mrzh7/scam-with-your-friends-web" alt="Star History Rank" height="55"/></a>
+-->
+
+[![Scam With Your Friends — Web gameplay preview](docs/media/trailer-preview.gif)](docs/media/trailer-preview.gif)
+
+</div>
+
+> **Expansion update:** New campaigns include eight investigation workflows, contextual dialogue, random incidents, public lobbies, call transfers, team assistance, custom characters, recording/replays and office presentation updates. **Voice cloning and team voice buttons are temporarily disabled**; default caller TTS and Studio recording remain available. Existing saves keep classic rules. See [expansion notes](docs/EXPANSION.md) for migration and self-hosting details.
+
+## Inspired by the official game
+
+**Official store:** [Scam With Your Friends on Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)
+
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1791402592" alt="Official Steam header" width="920" /></a>
+</p>
+
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/bcff5f79257b09d3477d82fbfc880c4d084bfee2/ss_bcff5f79257b09d3477d82fbfc880c4d084bfee2.1920x1080.jpg?t=1791402592" width="48%" alt="Official Steam screenshot 1" /></a>
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/afe1c51df0a3e01d5d238a949a2754e5a00636a2/ss_afe1c51df0a3e01d5d238a949a2754e5a00636a2.1920x1080.jpg?t=1791402592" width="48%" alt="Official Steam screenshot 2" /></a>
+</p>
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/d7676d89d64b88d0c817009cbb08afed3cfbf8b6/ss_d7676d89d64b88d0c817009cbb08afed3cfbf8b6.1920x1080.jpg?t=1791402592" width="48%" alt="Official Steam screenshot 3" /></a>
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/e29f4717a68c3234d24b824db66c4d56a8102b21/ss_e29f4717a68c3234d24b824db66c4d56a8102b21.1920x1080.jpg?t=1791402592" width="48%" alt="Official Steam screenshot 4" /></a>
+</p>
+
+This repository is an **unofficial free browser experiment**. It is **not** the original game, **not** an official port, and is **not affiliated** with the original developers. The Steam header and screenshots above are © their owners and are **hotlinked from Steam for reference only** — they are not committed in this repo. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+**Scam With Your Friends — Web** is an unofficial free remake you can play in the browser at [scam.gamefun.world](https://scam.gamefun.world): run a **scam call center with your friends**, use increasingly ridiculous schemes to trick **AI callers**, hit the **daily quota**, cause **office chaos**, and survive a brutal **performance review** from the boss. Walk to your desk, talk (typed, or with **voice control** where supported), finish desktop tasks for in-game money, and co-op with up to four players. Everything is fictional; never enter real payment details.
+
+![Scam With Your Friends — Web overview](docs/media/cover.svg)
+
+## Screenshots
+
+[![Screenshot wall: office, call desk and main menu](docs/media/screenshot-wall.png)](docs/media/screenshot-wall.png)
+
+| Three.js office | Incoming call desk | Main menu |
+| --- | --- | --- |
+| Walk, sit, shop and collect deliveries | Talk to AI callers, finish the task | Solo, co-op room code, settings |
+
+Captured from this implementation with a synthetic test account and offline dialogue — not original-game footage. Individual shots: [office](docs/media/office.png), [desktop](docs/media/desktop.png), [menu](docs/media/menu.png).
+
+## Features
+
+| System | Implementation |
+| --- | --- |
+| Office | Procedural Three.js room, movement, interaction, equipment and seated animation |
+| Calls | Eight AI caller profiles, trust/patience, scripted offline responses, optional AI dialogue |
+| Workweek | Seven days, daily quota timers, shop, delivery collection, inventory, accidents and performance review |
+| Voice | Voice control via speech recognition where supported, team voice chat, optional MiniMax or ElevenLabs TTS |
+| Co-op | Online co-op for up to four players, WebSocket state, shared day/quota and WebRTC voice |
+| Accounts | Optional; disabled by default. Google or verified email/password via Resend |
+| Saves | D1 account saves, revision conflict detection and local recovery/export |
+| Languages | English, Chinese, Portuguese, Japanese, Spanish, Russian, German |
+
+## Why play
+
+- **Online co-op for up to four** — share the day and quota, each handling your own calls, with proximity team voice.
+- **AI callers** — eight fictional personalities; offline scripted replies work without any key, optional AI for free conversation.
+- **Time management under pressure** — seven days, rising daily quotas, a shop with upgrades and deliveries to collect.
+- **Office chaos** — virus, blackout, fire and raid accidents break up the routine.
+- **Dark comedy tone** — absurd, fictional scenarios and a ruthless boss; nothing real is collected.
+- **Nothing to install** — runs in a browser; seven UI languages; self-host on Cloudflare for free-tier experiments.
+
+## Watch the trailer
+
+https://github.com/user-attachments/assets/4c90325b-0fb6-4102-877f-55c378ca5371
+
+**[▶ English · 1080p with sound](docs/media/trailer-en.mp4)** · **[▶ 中文字幕版](docs/media/trailer-zh-CN.mp4)** · [Poster](docs/media/trailer-poster.jpg) · [Original soundtrack](docs/media/trailer-score.mp3)
+
+Cinematic animation built from this project's office, characters and portraits, with original music. Dialogue and action are staged for the trailer. [Storyboard and rendering](marketing/trailer/README.md).
+
+**[Play the hosted demo → https://scam.gamefun.world](https://scam.gamefun.world)** — Google login or verified email on the demo; **source defaults to no accounts**.
+
+Again: this is an **unofficial** browser remake inspired by [Scam With Your Friends](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/) — not the original, not an official port, not affiliated with its developers. See [provenance and licenses](THIRD_PARTY_NOTICES.md). All task IDs, cards, funds and events are fictional. **Do not enter real payment details.**
+
+## How to play
+
+1. **Sit at your desk** — WASD to move, **E** to sit. Mobile has on-screen controls.
+2. **Answer the call** — read the AI caller, manage trust and patience; use offline reply buttons, or optional AI dialogue and voice.
+3. **Complete the desktop task** — finish verification steps for in-game money (never use real card data).
+4. **Shop and collect deliveries** — upgrades install immediately; physical items must be picked up in the office.
+5. **Hit the daily quota** before the shift timer ends and pass the performance review — miss it and the run is over. Co-op: up to four players share the day; **V** for team voice.
+
+Full rules: [Gameplay guide](docs/GAMEPLAY-EN.md) — round loop, controls, calls and trust, tools, money, shop items, accidents, co-op voice and audio notes. Also in: [简体中文](docs/GAMEPLAY.md) · [Português](docs/GAMEPLAY-PT.md) · [Español](docs/GAMEPLAY-ES.md) · [日本語](docs/GAMEPLAY-JA.md).
+
+## Quick start — no accounts
+
+```sh
+git clone https://github.com/mrzh7/scam-with-your-friends-web.git
+cd scam-with-your-friends-web
+npm ci
+cp .dev.vars.example .dev.vars   # PowerShell: Copy-Item .dev.vars.example .dev.vars
+npm run dev
+```
+
+Open **http://localhost:5173**. No Cloudflare login, OAuth or email service required. Leave the AI key empty for scripted offline play.
+
+Optional AI in `.dev.vars`:
+
+```dotenv
+ACCOUNTS_ENABLED=false
+AI_BASE_URL=https://api.deepseek.com
+AI_MODEL=deepseek-v4-flash
+AI_API_KEY=your-own-provider-key
+```
+
+Progress is per-browser via an anonymous cookie. Export backups before clearing cookies. Details: [local guide](docs/QUICKSTART.md).
+
+## Deploy on Cloudflare
+
+Set **`ACCOUNTS_ENABLED=true`** when you want login, create your own D1 database, configure at least one auth method, then follow **[DEPLOYMENT.md](docs/DEPLOYMENT.md)**. Workers + Static Assets + D1 + Durable Objects — not a static-only Pages app. Provider credentials are never included; paid APIs may charge even though the source is free.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  UI[React desktop + Three.js office] --> Worker[Cloudflare Worker API]
+  Worker --> D1[(D1 accounts and saves)]
+  Worker --> DO[Durable Object room]
+  DO <-->|WebSocket| UI
+  Worker --> AI[Optional dialogue provider]
+  Worker --> TTS[Optional speech provider]
+  Worker --> Auth[Google / Resend]
+  UI <-->|WebRTC| Peers[Other players]
+```
+
+`src/game/` — shared rules, dialogue, saves, browser transports. `worker/` — auth, API, providers, room authority. `migrations/` — D1 schema.
+
+## Development
+
+```sh
+npm run check          # Public-tree checks, i18n, tests, TypeScript and production build
+npm test
+npm run check:i18n
+```
+
+See [acceptance notes](docs/ACCEPTANCE.md), [SECURITY.md](SECURITY.md) and [data flow](docs/PRIVACY.md). Known limits: mobile WebGL/speech vary; no payment system; client-submitted single-player saves are unsuitable for real-money rewards.
+
+## Feedback & community
+
+Found a bug or have an idea? Tell us:
+
+- [Report a bug](https://github.com/mrzh7/scam-with-your-friends-web/issues/new?template=bug_report.yml)
+- [Request a feature](https://github.com/mrzh7/scam-with-your-friends-web/issues/new?template=feature_request.yml)
+- [Discussions (Q&A, ideas)](https://github.com/mrzh7/scam-with-your-friends-web/discussions)
+- [Security policy](SECURITY.md)
+- Contact: X [@mr_zh7](https://x.com/mr_zh7)
+
+## Contributing
+
+Useful areas: mobile compatibility, natural translations, accessibility and reliable voice reconnection. See [CONTRIBUTING.md](CONTRIBUTING.md). Security issues: [SECURITY.md](SECURITY.md).
+
+## Buy me a coffee
+
+<p align="center">If this project made you laugh, you can buy me a coffee. Tips are **voluntary**: no perks, no refunds. This is an unofficial fan project, not affiliated with the original game.</p>
+
+<table width="100%"><tr>
+<td width="33%" align="center" valign="top">
+<a href="docs/donate/eth-qr.png"><img src="docs/donate/eth-qr.png" width="140" alt="ETH tip QR"/></a><br/>
+<b>ETH</b><br/>
+<sub>Ethereum / EVM — confirm network</sub>
+</td>
+<td width="33%" align="center" valign="top">
+<a href="docs/donate/btc-qr.png"><img src="docs/donate/btc-qr.png" width="140" alt="BTC tip QR"/></a><br/>
+<b>BTC</b><br/>
+<sub>Bitcoin</sub>
+</td>
+<td width="33%" align="center" valign="top">
+<a href="docs/donate/bnb-qr.png"><img src="docs/donate/bnb-qr.png" width="140" alt="BNB tip QR"/></a><br/>
+<b>BNB</b><br/>
+<sub>BNB Smart Chain (BEP20) only</sub>
+</td>
+</tr></table>
+
+<p align="center">⚠️ Scan the QR above. Tips are voluntary. I will never DM you a new address — only trust the codes in this README.</p>
+
+## Frequently asked questions
+
+### Is this the official Scam With Your Friends game?
+
+No. This is an independent fan-made web version, not the Steam release or an official port. It is not affiliated with the original developers.
+
+### Can I play without an account or an AI API key?
+
+Yes. The source defaults to accounts disabled and includes offline scripted calls. Free-form AI dialogue and optional cloud TTS require your own provider configuration; provider usage may cost money. See the [quick start](docs/QUICKSTART.md).
+
+### Can I host a multiplayer browser game myself?
+
+Yes. The project includes co-op rooms, WebRTC voice chat and persistent progress. Follow the [deployment guide](docs/DEPLOYMENT.md) for Cloudflare Workers, D1 and Durable Objects, including optional Google/email login.
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=mrzh7%2Fscam-with-your-friends-web&amp;type=date"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=mrzh7/scam-with-your-friends-web&amp;type=date&amp;theme=dark&amp;legend=top-left" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=mrzh7/scam-with-your-friends-web&amp;type=date" /><img alt="Star History Chart" src="https://api.star-history.com/chart?repos=mrzh7/scam-with-your-friends-web&amp;type=date" /></picture></a>
+
+<div align="center">
+
+### Star · Share · Contribute
+
+If you enjoy it, **[star the repo](https://github.com/mrzh7/scam-with-your-friends-web)**, **[play the demo](https://scam.gamefun.world)** with friends and share it, **[follow on X](https://x.com/mr_zh7)**, or open an issue or pull request.
+
+</div>
+
+Project-owned code is [MIT](LICENSE). Third-party names, reference works and dependencies retain their own rights — see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

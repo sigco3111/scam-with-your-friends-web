@@ -1,251 +1,76 @@
 <div align="center">
 
-# Scam With Your Friends — Web
+# Scam With Your Friends — Web 한글판 (비공식)
 
-> Run a scam call center with your friends. Use increasingly ridiculous schemes to trick AI callers out of their life savings. Hit your daily quota, cause chaos around the office, and survive a brutal performance review from your rageaholic boss.
+> 친구들과 함께 사기 콜센터를 운영하세요. 점점 황당해지는 수법으로 AI 전화 고객을 속여 할당량을 채우고, 사무실을 난장판으로 만들고, 분노 조절 장애 상사의 혹독한 성과 평가에서 살아남으세요.
 
-<sub>Original game description · [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)</sub>
-
-Scam With Your Friends Web is an **open-source, unofficial browser remake** inspired by Scam With Your Friends. Play a co-op AI call center game with a 3D office, fictional callers, voice chat and daily quotas. Built with React, Three.js and Cloudflare Workers; run it locally or self-host it.
-
-> **Is "Scam With Your Friends" out yet? Release date & playtest:** the official game is by its original developers and is published on [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/) — check the store page for the current release date, Early Access and playtest status, as dates may change. This repo is a **free, unofficial fan-made browser version** you can [play right now](https://scam.gamefun.world) while you wait. Questions? See the [FAQ](https://github.com/mrzh7/scam-with-your-friends-web/discussions).
-
-**Latest update (2026-10-13):** expanded campaign and co-op features (also in no-account mode); Rainbit slot machine fixes with saved results and new staggered reel animations.
-
-### Online co-op call center party game · job simulator · dark comedy, in your browser
-
-**Answer fictional AI callers, talk with your team over voice, manage your time, hit the daily quota and survive the performance review.**
-
-**English** · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [Feedback](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
-
-<p align="center">
-  <a href="https://scam.gamefun.world"><strong>▶ Play Demo</strong></a>
-  &nbsp;·&nbsp;
-  <a href="#watch-the-trailer"><strong>Trailer</strong></a>
-  &nbsp;·&nbsp;
-  <a href="#how-to-play"><strong>Gameplay</strong></a>
-  &nbsp;·&nbsp;
-  <a href="docs/DEPLOYMENT.md"><strong>Deploy</strong></a>
-  &nbsp;·&nbsp;
-  <a href="docs/QUICKSTART.md"><strong>Docs</strong></a>
-</p>
-
-<p align="center">
-  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
-  <a href="https://scam.gamefun.world"><img alt="Website" src="https://img.shields.io/badge/website-scam.gamefun.world-f3c848?labelColor=142e30" /></a>
-  <img alt="React" src="https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white&labelColor=20232a" />
-  <img alt="Three.js" src="https://img.shields.io/badge/Three.js-r180-000000?logo=threedotjs&logoColor=white" />
-  <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white" />
-  <a href=".github/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" /></a>
-  <a href="https://x.com/mr_zh7"><img alt="X @mr_zh7" src="https://img.shields.io/badge/X-@mr__zh7-000000?logo=x&logoColor=white" /></a>
-</p>
-
-<!-- Ranking badges (uncomment when live — do not leave broken images):
-  Trendshift appears only after the repo is listed at https://trendshift.io
-  (replace REPO_ID with the id shown on https://trendshift.io/repositories/<id>):
-  <a href="https://trendshift.io/repositories/REPO_ID" target="_blank"><img src="https://trendshift.io/api/badge/repositories/REPO_ID" alt="mrzh7/scam-with-your-friends-web | Trendshift" width="250" height="55"/></a>
-  Star History rank badge (works only once the repo is in their ranking):
-  <a href="https://www.star-history.com/mrzh7/scam-with-your-friends-web"><img src="https://api.star-history.com/badge?repo=mrzh7/scam-with-your-friends-web" alt="Star History Rank" height="55"/></a>
--->
-
-[![Scam With Your Friends — Web gameplay preview](docs/media/trailer-preview.gif)](docs/media/trailer-preview.gif)
+<sub>원작 게임 설명 · [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)</sub>
 
 </div>
 
-> **Expansion update:** New campaigns include eight investigation workflows, contextual dialogue, random incidents, public lobbies, call transfers, team assistance, custom characters, recording/replays and office presentation updates. **Voice cloning and team voice buttons are temporarily disabled**; default caller TTS and Studio recording remain available. Existing saves keep classic rules. See [expansion notes](docs/EXPANSION.md) for migration and self-hosting details.
+> **이 저장소는 [mrzh7/scam-with-your-friends-web](https://github.com/mrzh7/scam-with-your-friends-web)의 비공식 한글 포크입니다.**
+> 원본은 MIT 라이선스이며 원본 저작권 표기를 유지합니다(LICENSE 참조). 원본 역시 공식 게임이 아닌 **비공식 무료 브라우저 리메이크**입니다.
+> 원본 저장소: https://github.com/mrzh7/scam-with-your-friends-web · 원본 데모: https://scam.gamefun.world
+> 원본 영문 README: [README.en.md](README.en.md)
 
-## Inspired by the official game
+**한글판 라이브(정적 배포): https://sigco3111.github.io/scam-with-your-friends-web/**
 
-**Official store:** [Scam With Your Friends on Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)
+## 이 한글판의 범위 (중요)
 
-<p align="center">
-  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1791402592" alt="Official Steam header" width="920" /></a>
-</p>
+이 포크의 GitHub Pages 배포는 **정적 호스팅**이므로 다음과 같이 동작합니다.
 
-<p align="center">
-  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/bcff5f79257b09d3477d82fbfc880c4d084bfee2/ss_bcff5f79257b09d3477d82fbfc880c4d084bfee2.1920x1080.jpg?t=1791402592" width="48%" alt="Official Steam screenshot 1" /></a>
-  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/afe1c51df0a3e01d5d238a949a2754e5a00636a2/ss_afe1c51df0a3e01d5d238a949a2754e5a00636a2.1920x1080.jpg?t=1791402592" width="48%" alt="Official Steam screenshot 2" /></a>
-</p>
-<p align="center">
-  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/d7676d89d64b88d0c817009cbb08afed3cfbf8b6/ss_d7676d89d64b88d0c817009cbb08afed3cfbf8b6.1920x1080.jpg?t=1791402592" width="48%" alt="Official Steam screenshot 3" /></a>
-  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/e29f4717a68c3234d24b824db66c4d56a8102b21/ss_e29f4717a68c3234d24b824db66c4d56a8102b21.1920x1080.jpg?t=1791402592" width="48%" alt="Official Steam screenshot 4" /></a>
-</p>
+- **싱글 플레이(게스트 모드) 전용**입니다. 게스트 저장은 브라우저 로컬에만 보관됩니다.
+- 온라인 협동(최대 4인, WebSocket 방 코드), 팀 음성 채팅(WebRTC), 계정 로그인(Google/이메일),
+  클라우드 저장(D1), 선택적 AI 대화/TTS 등 **서버(Cloudflare Workers)가 필요한 기능은 이 배포에서
+  제공되지 않습니다**. 원본 저장소를 자체 호스팅하면 사용할 수 있습니다(원본 문서 `docs/DEPLOYMENT.md` 참조).
+- 오프라인 스크립트 응답, 사무실 이동/상호작용, 데스크톱 작업, 상점, 일일 할당량과 성과 평가 등
+  **클라이언트만으로 동작하는 싱글 플레이 루프는 그대로 플레이할 수 있습니다.**
 
-This repository is an **unofficial free browser experiment**. It is **not** the original game, **not** an official port, and is **not affiliated** with the original developers. The Steam header and screenshots above are © their owners and are **hotlinked from Steam for reference only** — they are not committed in this repo. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+## 게임 소개 (원본 기준)
 
-**Scam With Your Friends — Web** is an unofficial free remake you can play in the browser at [scam.gamefun.world](https://scam.gamefun.world): run a **scam call center with your friends**, use increasingly ridiculous schemes to trick **AI callers**, hit the **daily quota**, cause **office chaos**, and survive a brutal **performance review** from the boss. Walk to your desk, talk (typed, or with **voice control** where supported), finish desktop tasks for in-game money, and co-op with up to four players. Everything is fictional; never enter real payment details.
+**Scam With Your Friends — Web**은 브라우저에서 즐기는 협동 AI 콜센터 게임입니다. 3D 사무실, 가상의
+전화 고객, 일일 할당량을 특징으로 하며 React, Three.js, Cloudflare Workers로 만들어졌습니다.
+원작 공식 게임은 [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)에서
+확인하세요. 이 저장소는 원작 개발사와 **무관한 비공식 팬 메이드**입니다.
 
-![Scam With Your Friends — Web overview](docs/media/cover.svg)
+- 8종의 가상 AI 전화 고객, 신뢰/인내 관리, 키 없이 동작하는 오프라인 스크립트 응답
+- 7일 근무, 상승하는 일일 할당량, 상점과 배달 수령, 인벤토리, 돌발 사고, 성과 평가
+- 바이러스·정전·화재·급습 등 사무실 돌발 사고
+- 모든 것이 가상입니다. **실제 결제 정보를 절대 입력하지 마세요.**
 
-## Screenshots
+## 플레이 방법
 
-[![Screenshot wall: office, call desk and main menu](docs/media/screenshot-wall.png)](docs/media/screenshot-wall.png)
+1. **책상에 앉기** — WASD로 이동, **E**로 앉기. 모바일은 화면 컨트롤.
+2. **전화 받기** — AI 고객의 신뢰와 인내를 관리하며 오프라인 응답 버튼 사용.
+3. **데스크톱 작업 완료** — 게임 내 돈을 위해 인증 절차 완료(실제 카드 정보 금지).
+4. **상점과 배달 수령** — 업그레이드는 즉시 설치, 실물 아이템은 사무실에서 수령.
+5. **일일 할당량 달성** — 근무 타이머 종료 전 달성하고 성과 평가 통과. 실패하면 런 종료.
 
-| Three.js office | Incoming call desk | Main menu |
+## 한글화 범위와 검증
+
+- UI/게임 텍스트 카탈로그 전체(1,419키)를 한글로 번역했습니다. 브랜드명, 단축키(WASD), URL 스킴 등
+  일부 항목은 의도적으로 원문을 유지했습니다.
+- 실제 배포 빌드에서 게스트 부팅과 싱글 플레이 진입, 한글 UI 표시를 검증했습니다(아래 스크린샷).
+- 언어 전환: 게임 설정에서 한국어 선택(브라우저 로컬스토리지 `swyf-language`에 저장).
+
+### 배포 검증 스크린샷
+
+실제 배포 빌드(https://sigco3111.github.io/scam-with-your-friends-web/)에서 촬영했습니다.
+
+| 한글 HUD로 근무 시작 | 3D 사무실 + 수신 전화 | 게임 루프 진행 |
 | --- | --- | --- |
-| Walk, sit, shop and collect deliveries | Talk to AI callers, finish the task | Solo, co-op room code, settings |
+| ![부팅 HUD](docs/screenshots-ko/boot-hud.png) | ![사무실과 수신 전화](docs/screenshots-ko/office-call.png) | ![게임 진행](docs/screenshots-ko/office-call-2.png) |
 
-Captured from this implementation with a synthetic test account and offline dialogue — not original-game footage. Individual shots: [office](docs/media/office.png), [desktop](docs/media/desktop.png), [menu](docs/media/menu.png).
+- 게스트("게스트 직원") 부팅 → 1일차 시작 → 3D 사무실 렌더 → 근무 타이머 실시간 진행(06:00부터 감소) 확인
+- 수신 전화 팝업(응답/거절) 클릭 입력 동작 확인, HUD 전면 한글(일일 할당량, 체력, 조작 안내)
 
-## Features
+## 원본 문서
 
-| System | Implementation |
-| --- | --- |
-| Office | Procedural Three.js room, movement, interaction, equipment and seated animation |
-| Calls | Eight AI caller profiles, trust/patience, scripted offline responses, optional AI dialogue |
-| Workweek | Seven days, daily quota timers, shop, delivery collection, inventory, accidents and performance review |
-| Voice | Voice control via speech recognition where supported, team voice chat, optional MiniMax or ElevenLabs TTS |
-| Co-op | Online co-op for up to four players, WebSocket state, shared day/quota and WebRTC voice |
-| Accounts | Optional; disabled by default. Google or verified email/password via Resend |
-| Saves | D1 account saves, revision conflict detection and local recovery/export |
-| Languages | English, Chinese, Portuguese, Japanese, Spanish, Russian, German |
+설치/자체 호스팅/개발 문서는 원본과 동일합니다: `docs/QUICKSTART.md`, `docs/DEPLOYMENT.md`,
+`docs/EXPANSION.md`, `THIRD_PARTY_NOTICES.md` 등. 다언어 README: [English](README.en.md) ·
+[简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) ·
+[日本語](README.ja.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
-## Why play
+## 라이선스
 
-- **Online co-op for up to four** — share the day and quota, each handling your own calls, with proximity team voice.
-- **AI callers** — eight fictional personalities; offline scripted replies work without any key, optional AI for free conversation.
-- **Time management under pressure** — seven days, rising daily quotas, a shop with upgrades and deliveries to collect.
-- **Office chaos** — virus, blackout, fire and raid accidents break up the routine.
-- **Dark comedy tone** — absurd, fictional scenarios and a ruthless boss; nothing real is collected.
-- **Nothing to install** — runs in a browser; seven UI languages; self-host on Cloudflare for free-tier experiments.
-
-## Watch the trailer
-
-https://github.com/user-attachments/assets/4c90325b-0fb6-4102-877f-55c378ca5371
-
-**[▶ English · 1080p with sound](docs/media/trailer-en.mp4)** · **[▶ 中文字幕版](docs/media/trailer-zh-CN.mp4)** · [Poster](docs/media/trailer-poster.jpg) · [Original soundtrack](docs/media/trailer-score.mp3)
-
-Cinematic animation built from this project's office, characters and portraits, with original music. Dialogue and action are staged for the trailer. [Storyboard and rendering](marketing/trailer/README.md).
-
-**[Play the hosted demo → https://scam.gamefun.world](https://scam.gamefun.world)** — Google login or verified email on the demo; **source defaults to no accounts**.
-
-Again: this is an **unofficial** browser remake inspired by [Scam With Your Friends](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/) — not the original, not an official port, not affiliated with its developers. See [provenance and licenses](THIRD_PARTY_NOTICES.md). All task IDs, cards, funds and events are fictional. **Do not enter real payment details.**
-
-## How to play
-
-1. **Sit at your desk** — WASD to move, **E** to sit. Mobile has on-screen controls.
-2. **Answer the call** — read the AI caller, manage trust and patience; use offline reply buttons, or optional AI dialogue and voice.
-3. **Complete the desktop task** — finish verification steps for in-game money (never use real card data).
-4. **Shop and collect deliveries** — upgrades install immediately; physical items must be picked up in the office.
-5. **Hit the daily quota** before the shift timer ends and pass the performance review — miss it and the run is over. Co-op: up to four players share the day; **V** for team voice.
-
-Full rules: [Gameplay guide](docs/GAMEPLAY-EN.md) — round loop, controls, calls and trust, tools, money, shop items, accidents, co-op voice and audio notes. Also in: [简体中文](docs/GAMEPLAY.md) · [Português](docs/GAMEPLAY-PT.md) · [Español](docs/GAMEPLAY-ES.md) · [日本語](docs/GAMEPLAY-JA.md).
-
-## Quick start — no accounts
-
-```sh
-git clone https://github.com/mrzh7/scam-with-your-friends-web.git
-cd scam-with-your-friends-web
-npm ci
-cp .dev.vars.example .dev.vars   # PowerShell: Copy-Item .dev.vars.example .dev.vars
-npm run dev
-```
-
-Open **http://localhost:5173**. No Cloudflare login, OAuth or email service required. Leave the AI key empty for scripted offline play.
-
-Optional AI in `.dev.vars`:
-
-```dotenv
-ACCOUNTS_ENABLED=false
-AI_BASE_URL=https://api.deepseek.com
-AI_MODEL=deepseek-v4-flash
-AI_API_KEY=your-own-provider-key
-```
-
-Progress is per-browser via an anonymous cookie. Export backups before clearing cookies. Details: [local guide](docs/QUICKSTART.md).
-
-## Deploy on Cloudflare
-
-Set **`ACCOUNTS_ENABLED=true`** when you want login, create your own D1 database, configure at least one auth method, then follow **[DEPLOYMENT.md](docs/DEPLOYMENT.md)**. Workers + Static Assets + D1 + Durable Objects — not a static-only Pages app. Provider credentials are never included; paid APIs may charge even though the source is free.
-
-## Architecture
-
-```mermaid
-flowchart LR
-  UI[React desktop + Three.js office] --> Worker[Cloudflare Worker API]
-  Worker --> D1[(D1 accounts and saves)]
-  Worker --> DO[Durable Object room]
-  DO <-->|WebSocket| UI
-  Worker --> AI[Optional dialogue provider]
-  Worker --> TTS[Optional speech provider]
-  Worker --> Auth[Google / Resend]
-  UI <-->|WebRTC| Peers[Other players]
-```
-
-`src/game/` — shared rules, dialogue, saves, browser transports. `worker/` — auth, API, providers, room authority. `migrations/` — D1 schema.
-
-## Development
-
-```sh
-npm run check          # Public-tree checks, i18n, tests, TypeScript and production build
-npm test
-npm run check:i18n
-```
-
-See [acceptance notes](docs/ACCEPTANCE.md), [SECURITY.md](SECURITY.md) and [data flow](docs/PRIVACY.md). Known limits: mobile WebGL/speech vary; no payment system; client-submitted single-player saves are unsuitable for real-money rewards.
-
-## Feedback & community
-
-Found a bug or have an idea? Tell us:
-
-- [Report a bug](https://github.com/mrzh7/scam-with-your-friends-web/issues/new?template=bug_report.yml)
-- [Request a feature](https://github.com/mrzh7/scam-with-your-friends-web/issues/new?template=feature_request.yml)
-- [Discussions (Q&A, ideas)](https://github.com/mrzh7/scam-with-your-friends-web/discussions)
-- [Security policy](SECURITY.md)
-- Contact: X [@mr_zh7](https://x.com/mr_zh7)
-
-## Contributing
-
-Useful areas: mobile compatibility, natural translations, accessibility and reliable voice reconnection. See [CONTRIBUTING.md](CONTRIBUTING.md). Security issues: [SECURITY.md](SECURITY.md).
-
-## Buy me a coffee
-
-<p align="center">If this project made you laugh, you can buy me a coffee. Tips are **voluntary**: no perks, no refunds. This is an unofficial fan project, not affiliated with the original game.</p>
-
-<table width="100%"><tr>
-<td width="33%" align="center" valign="top">
-<a href="docs/donate/eth-qr.png"><img src="docs/donate/eth-qr.png" width="140" alt="ETH tip QR"/></a><br/>
-<b>ETH</b><br/>
-<sub>Ethereum / EVM — confirm network</sub>
-</td>
-<td width="33%" align="center" valign="top">
-<a href="docs/donate/btc-qr.png"><img src="docs/donate/btc-qr.png" width="140" alt="BTC tip QR"/></a><br/>
-<b>BTC</b><br/>
-<sub>Bitcoin</sub>
-</td>
-<td width="33%" align="center" valign="top">
-<a href="docs/donate/bnb-qr.png"><img src="docs/donate/bnb-qr.png" width="140" alt="BNB tip QR"/></a><br/>
-<b>BNB</b><br/>
-<sub>BNB Smart Chain (BEP20) only</sub>
-</td>
-</tr></table>
-
-<p align="center">⚠️ Scan the QR above. Tips are voluntary. I will never DM you a new address — only trust the codes in this README.</p>
-
-## Frequently asked questions
-
-### Is this the official Scam With Your Friends game?
-
-No. This is an independent fan-made web version, not the Steam release or an official port. It is not affiliated with the original developers.
-
-### Can I play without an account or an AI API key?
-
-Yes. The source defaults to accounts disabled and includes offline scripted calls. Free-form AI dialogue and optional cloud TTS require your own provider configuration; provider usage may cost money. See the [quick start](docs/QUICKSTART.md).
-
-### Can I host a multiplayer browser game myself?
-
-Yes. The project includes co-op rooms, WebRTC voice chat and persistent progress. Follow the [deployment guide](docs/DEPLOYMENT.md) for Cloudflare Workers, D1 and Durable Objects, including optional Google/email login.
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=mrzh7%2Fscam-with-your-friends-web&amp;type=date"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=mrzh7/scam-with-your-friends-web&amp;type=date&amp;theme=dark&amp;legend=top-left" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=mrzh7/scam-with-your-friends-web&amp;type=date" /><img alt="Star History Chart" src="https://api.star-history.com/chart?repos=mrzh7/scam-with-your-friends-web&amp;type=date" /></picture></a>
-
-<div align="center">
-
-### Star · Share · Contribute
-
-If you enjoy it, **[star the repo](https://github.com/mrzh7/scam-with-your-friends-web)**, **[play the demo](https://scam.gamefun.world)** with friends and share it, **[follow on X](https://x.com/mr_zh7)**, or open an issue or pull request.
-
-</div>
-
-Project-owned code is [MIT](LICENSE). Third-party names, reference works and dependencies retain their own rights — see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+원본과 동일하게 MIT 라이선스입니다. [LICENSE](LICENSE) 참조.
