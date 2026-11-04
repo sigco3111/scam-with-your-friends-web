@@ -48,7 +48,7 @@ export function AccountGate({ children }: { children: (session: AccountSession, 
     const cached = loadAccountCache(guestId);
     const cachedState = cached ? parseSave(cached.state) : null;
     setAccountsMode(true);
-    setSession({ user: { id: guestId, name: '访客员工', email: '', anonymous: true, emailVerified: true }, state: cachedState || newGame(), settings: { ...defaultSettings, ...(cached?.settings || {}) }, revision: cached?.revision ?? 0, dirty: cached?.dirty ?? false, providers: { google: false, wechat: false } });
+    setSession({ user: { id: guestId, name: t('访客员工'), email: '', anonymous: true, emailVerified: true }, state: cachedState || newGame(), settings: { ...defaultSettings, ...(cached?.settings || {}) }, revision: cached?.revision ?? 0, dirty: cached?.dirty ?? false, providers: { google: false, wechat: false } });
     setNotice('离线单人模式：进度只保存在此浏览器。');
     return;
    }
