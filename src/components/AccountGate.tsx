@@ -4,8 +4,8 @@ import {setLanguage} from '../i18n';
 import {t} from '../i18n';
 import {LanguageSelector} from '../i18n/LanguageSelector';
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
-import { api, defaultSettings, loadAccountCache, saveAccountCache, type Account, type SaveSettings } from '../game/storage';
-import { parseSave, type GameState } from '../game/engine';
+import { api, ApiError, defaultSettings, loadAccountCache, saveAccountCache, type Account, type SaveSettings } from '../game/storage';
+import { newGame, parseSave, type GameState } from '../game/engine';
 import { Icon } from './Icon';
 export interface AccountSession { user: Account; state: GameState; settings: SaveSettings; revision: number; dirty: boolean; providers: { google: boolean; wechat: boolean } }
 export function AccountGate({ children }: { children: (session: AccountSession, logout: () => Promise<void>) => ReactNode }) {
@@ -38,7 +38,22 @@ export function AccountGate({ children }: { children: (session: AccountSession, 
    if (cached?.dirty && !recover) { saveAccountCache(cached, true); setNotice('云端已有更新，已载入云端进度。本机未同步副本可在设置中导出。'); }
    const savedLanguage=(recover?cached!.settings:data.settings).language;if(savedLanguage)setLanguage(savedLanguage);
    setSession({ user, state: recover ? cached!.state : state, settings: { ...defaultSettings, ...(recover ? cached!.settings : data.settings) }, revision: data.revision, dirty: recover, providers: { google: false, wechat: false } });
-  } catch (e) { if (alive.current && generation === version.current) { setSession(null); setError(e instanceof Error ? e.message : '暂时无法登录。'); } }
+  } catch (e) {
+   if (alive.current && generation !== version.current) return;
+   // Static-host (GitHub Pages) build: no /api backend at all — fall back to a local guest session so
+   // single-player works offline (localStorage saves). Any network error or missing endpoint means offline.
+   const offline = e instanceof TypeError || (e instanceof ApiError && (e.status === 0 || e.status === 404));
+   if (offline && alive.current) {
+    const guestId = 'guest-local';
+    const cached = loadAccountCache(guestId);
+    const cachedState = cached ? parseSave(cached.state) : null;
+    setAccountsMode(true);
+    setSession({ user: { id: guestId, name: '访客员工', email: '', anonymous: true, emailVerified: true }, state: cachedState || newGame(), settings: { ...defaultSettings, ...(cached?.settings || {}) }, revision: cached?.revision ?? 0, dirty: cached?.dirty ?? false, providers: { google: false, wechat: false } });
+    setNotice('离线单人模式：进度只保存在此浏览器。');
+    return;
+   }
+   if (alive.current) { setSession(null); setError(e instanceof Error ? e.message : '暂时无法登录。'); }
+  }
   finally { if (alive.current && generation === version.current) setChecking(false); }
  }, []);
  const broadcast = (id: string) => { try { localStorage.setItem('swyf-account-change', JSON.stringify({ id, at: Date.now() })); } catch {} };
