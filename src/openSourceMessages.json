@@ -98,17 +98,17 @@
   "compact": "Open Source. Mach es zu deinem."
  },
  "ko": {
-  "label": "OPEN SOURCE PROJECT",
+  "label": "오픈 소스 프로젝트",
   "title": "오픈 소스 비공식 리메이크",
   "description": "이 프로젝트는 원작 게임의 비공식 웹 리메이크입니다. 원작자와 무관합니다.",
   "features": [
-   "Explore the source",
-   "Self-host",
-   "Contribute"
+   "소스 살펴보기",
+   "직접 호스팅",
+   "기여하기"
   ],
   "star": "GitHub에서 스타 누르기",
   "docs": "문서",
   "support": "지원",
-  "compact": "Open source. Make it your own."
+  "compact": "오픈 소스입니다. 마음대로 바꿔 보세요."
  }
 }
